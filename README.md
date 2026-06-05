@@ -23,13 +23,19 @@ http://localhost:8501
 啟動指令：
 
 ```powershell
-streamlit run linear_regression_plot_generator.py
+streamlit run app.py
 ```
 
 如果之後部署到 Streamlit Community Cloud，可以將公開網址放在這裡：
 
 ```text
 https://your-streamlit-demo-url.streamlit.app
+```
+
+Streamlit Community Cloud 的 `Main file path` 請填：
+
+```text
+app.py
 ```
 
 ## 功能特色
@@ -49,7 +55,7 @@ https://your-streamlit-demo-url.streamlit.app
 
 ```text
 .
-+-- linear_regression_plot_generator.py
++-- app.py
 +-- requirements.txt
 +-- linear_regression_data.csv
 +-- linear_regression_plot.png
@@ -69,7 +75,7 @@ pip install -r requirements.txt
 使用 Streamlit 啟動網頁：
 
 ```powershell
-streamlit run linear_regression_plot_generator.py
+streamlit run app.py
 ```
 
 啟動成功後，終端機會顯示本機網址，例如：
