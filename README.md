@@ -141,3 +141,9 @@ abs_residual
 ## 備註
 
 本專案使用 matplotlib 的 `Agg` backend，讓圖表在沒有 GUI backend 的環境中也能正常產生。
+
+
+
+## 簡單線性迴歸圖表產生器Demo截圖
+
+![alt text](demoL4.png)
