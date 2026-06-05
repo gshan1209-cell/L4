@@ -29,7 +29,7 @@ streamlit run app.py
 如果之後部署到 Streamlit Community Cloud，可以將公開網址放在這裡：
 
 ```text
-https://your-streamlit-demo-url.streamlit.app
+https://seanlin4.streamlit.app/
 ```
 
 Streamlit Community Cloud 的 `Main file path` 請填：
