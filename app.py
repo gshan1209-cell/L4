@@ -106,7 +106,7 @@ def plot_regression(
         top_outliers["X"],
         top_outliers["Y"],
         s=120,
-        label="Top 10 Outliers",
+        label=f"Top {len(top_outliers)} Outliers",
     )
 
     for i, (_, row) in enumerate(top_outliers.iterrows()):
@@ -130,7 +130,7 @@ def plot_regression(
         label="Regression Line",
     )
 
-    ax.set_title("Simple Linear Regression with Top 10 Outliers")
+    ax.set_title(f"Simple Linear Regression with Top {len(top_outliers)} Outliers")
     ax.set_xlabel("X")
     ax.set_ylabel("Y")
     ax.legend()
@@ -222,7 +222,7 @@ def main():
     cols[3].metric("Best a", f"{best_a:.4f}")
     cols[4].metric("Best b", f"{best_b:.4f}")
 
-    st.subheader(f"Top {int(top_k)} Outliers")
+    st.subheader(f"Top {len(top10_outliers)} Outliers")
     st.dataframe(top10_outliers[["X", "Y", "Y_pred", "residual", "abs_residual"]], use_container_width=True)
 
     return df, top10_outliers, model
